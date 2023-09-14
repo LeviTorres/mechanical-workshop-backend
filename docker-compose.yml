@@ -1,0 +1,14 @@
+
+version: '3'
+
+services:
+  db:
+    container_name: mechanical-jb
+    image: mongo:5.0.16
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGODB_DATABASE: mechanicaljb-db
+    volumes:
+       - ./mongo:/data/db
