@@ -8,7 +8,6 @@ import { UpdateClientDto } from './dto/update-client.dto';
 import { Model } from 'mongoose';
 import { Client } from './entities/client.entity';
 import { InjectModel } from '@nestjs/mongoose';
-import { log } from 'console';
 
 @Injectable()
 export class ClientsService {
