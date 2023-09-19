@@ -11,7 +11,6 @@ import { LoginDto } from './dto/login.dto';
 import { AuthGuard } from 'src/guards/auth.guard';
 import { User } from 'src/users/entities/user.entity';
 import { LoginResponse } from './interfaces/login-response';
-import { log } from 'console';
 
 @Controller('auth')
 export class AuthController {
