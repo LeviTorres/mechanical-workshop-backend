@@ -6,7 +6,7 @@ export class Client extends Document {
   @Prop({ required: true, unique: true })
   key_client: string;
 
-  @Prop({ required: true, unique: true })
+  @Prop({ required: true })
   name: string;
 
   @Prop({ required: true })
@@ -21,11 +21,11 @@ export class Client extends Document {
   @Prop({ default: true })
   isActive: boolean;
 
-  @Prop({ default: Date.now })
-  createdAt: Date;
+  @Prop()
+  createdAt: number;
 
-  @Prop({ default: Date.now })
-  updatedAt: Date;
+  @Prop()
+  updatedAt: number;
 }
 
 export const ClientSchema = SchemaFactory.createForClass(Client);

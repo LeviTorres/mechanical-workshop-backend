@@ -1,4 +1,4 @@
-import { IsString, IsBoolean, IsEmail, IsDate } from 'class-validator';
+import { IsString, IsBoolean, IsEmail, IsDate, IsInt } from 'class-validator';
 
 export class CreateClientDto {
   @IsString()
@@ -20,9 +20,9 @@ export class CreateClientDto {
   @IsBoolean()
   isActive: boolean;
 
-  @IsDate()
-  createdAt: Date;
+  @IsInt()
+  createdAt: number;
 
-  @IsDate()
-  updatedAt: Date;
+  @IsInt()
+  updatedAt: number;
 }
